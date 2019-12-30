@@ -1,0 +1,79 @@
+JS作業
+
+高雄旅遊網
+
+用ajax從遠端網址撈資料
+
+下拉是選單的選項從資料裡面撈出有出現過的區域
+在呈現在網頁上
+
+排版方面用bootstrap
+
+撈取資料再用innerHTML呈現在網頁上
+
+下面各區域的旅遊資訊，先用html和bootstrap排版出想要的樣子
+
+再用JS去呈現
+
+接著是分頁
+目前思考是計算該區域有幾筆資料
+
+//計算各行政區遇有幾筆資料
+    var counts = {}// 宣告一空物件用來儲存結果資料
+    for (var j = 0; j < zone.length; j++) {
+        // 將zone[i]值存於num中
+        var num = zone[j];
+        // 比較counts物件，如相同則該物件存值+1，如不同則存值設為1
+        counts[num] = counts[num] ? counts[num] + 1 : 1;
+    }
+在考慮一頁要放幾筆?
+
+評論區提供思維
+1.分頁可嘗試用二維陣列方式去思維分頁寫法，也就是每頁用陣列方式存放所屬內容
+
+這邊有類似的討論可以參考
+https://www.udemy.com/course/javascript-learning/learn/lecture/7073204#questions/8145773
+
+2.目前看到是把 JSON 內容寫在 codepen 所以顯示資料很快，如果這部分還有問題可以再詳述問題狀況
+
+displayDistrict();
+後來是顯示資料時
+function裡面呼叫計算頁數function
+第一頁放6筆(0,1,2,3,4,5)
+第二頁放六筆(6,7,8,9,10,11)接續這樣
+
+寫for迴圈將資料用innerHTML方式呈現
+
+
+計算頁數function
+
+前面設定一頁放六筆
+呼叫該function帶入有幾筆該區資料
+>6筆----pageLeng = Math.ceil(num / contentNum);//math ceil會回傳大於等於所給數字的最小整數。如果7.8回傳8
+
+頁碼從1開始，開始for迴圈帶入芬頁頁碼呈現在網頁上
+如果有12筆該區資料為2頁
+畫面顯示為  PRE 1 2 NEXT
+
+
+
+在寫頁碼在網頁操作切換的監聽function
+
+如果點擊的值是next執行if判斷是判斷當頁頁碼有沒有等於頁碼數量
+如果有等於則該頁就是最後一頁
+沒有則是跳至下一頁pagenum++
+
+最後會在呼叫displayDistrict();
+呈現下一頁的後續資列
+
+
+
+當中top的設計則用scroll
+頁面滾動超過多少就會顯示向上的圖示
+未超過則隱藏
+
+點擊向上圖示，頁面平滑向上滾動
+不是直接跳至該區
+window.scrollTo({ 'behavior': 'smooth', 'top': dist.offsetTop })
+
+位置則用offsetTop 

@@ -1,0 +1,135 @@
+
+$priblue:#559AC8;
+$pripur:#8a82cc;
+
+.wrap{
+  max-width: 1024px;
+  margin: 0 auto;
+
+}
+
+.bg-cover {
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+li{
+  display: block;
+}
+.wrap{
+  width: 1024px;
+  margin: 0 auto;
+}
+.header-bg{
+  background-image:url(../images/Hero.png) ;
+  height: 380px;
+}
+.bg-cover {
+    background-size: cover;
+    background-position: center center;
+}
+.title{
+  padding-top: 89px;
+  padding-bottom: 96px;
+}
+.footer-bg{
+  background:$priblue;
+}
+.hotblock{
+  background: #FFFFFF;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+  border-radius: 5px;
+}
+//熱門行政區
+.hot{
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    
+	}
+}
+.hotitem{
+  
+  border-radius: 5px;
+  min-width: 130px;
+  height: 42px;
+  padding: 5px ;
+  color:#fff;
+  text-decoration: none;
+  
+  margin:0 10px;
+  font-family: "Microsoft JhengHei";
+  font-size: 20px;
+  @media (max-width: 768px) {
+
+    margin: 5px;
+	}
+ 
+}
+
+//水平線
+.divider{
+  color:$priblue;
+  font-size: 24px;
+  position: relative;
+  &:before{
+    content:"";
+    display: block;
+    // width: 900px;
+    margin:0 20px;
+    border:1px dashed $priblue;
+    position: absolute;
+    top: 17px;
+    left: 0;
+    right: 0;
+    z-index: 0;
+  }
+}
+.box{
+  z-index: 2;
+  // border:1px solid #000;
+  background: #fff;
+}
+
+//card
+.card{
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+}
+.card-img{
+  position: relative;
+}
+
+.card-list{
+  padding-left: 0;
+  margin-bottom: 0;
+  position: relative;
+  li{
+    padding: 5px 0;
+    overflow : hidden;
+    text-overflow : ellipsis;
+    white-space : nowrap;
+    img{
+      padding-right: 5px;
+    }
+  }
+}
+.card-tag{
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+//向上
+.gotop{
+  position: relative;
+}
+.gotop-btn{
+  position: absolute;
+  bottom: 120px;
+  right: 45px;
+  color: $priblue;
+  display: none;
+
+}
