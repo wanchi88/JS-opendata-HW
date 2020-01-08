@@ -10917,7 +10917,7 @@ li {
 .gotop-btn {
   position: absolute;
   bottom: 120px;
-  right: 45px;
+  right: -23px;
   color: #559AC8;
   display: none;
 }
