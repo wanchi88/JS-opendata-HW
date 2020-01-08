@@ -59,7 +59,7 @@ function addinfo(e) {
 }
 
 function showlist(e){
-    
+    if (e.target.nodeName !== 'BUTTON') { return }
 
     displayData = []; // 清空上一筆資料，擺放要顯示在網頁上的區域資料
     selectData = []; // 清空上一筆資料，擺放選取的區域資料
