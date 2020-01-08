@@ -13,122 +13,83 @@
 
 <body>
 
-    <header>
-        <div class="header">
-            <div class="header-bg bg-cover ">
-                <h1 class="text-white text-center title">高雄旅遊資訊</h1>
-
-                <div class="d-flex justify-content-center pb-5">
-                    <select class="form-control " id="dist" style="width: 35.63%;">
-                        <option>--請選擇行政區--</option>
-                
-                    </select>
-                </div>
-            </div>
-            <!-- 熱門行政區 -->
-            <div class="row justify-content-center" style="margin-top: -50px;">
-                <div class="col-10 py-3 hotblock">
-                    <h5 class="">熱門行政區</h4>
-                        <!-- <ul class="d-flex hotList">
-                            <li class=""><a href="#" class="hotitem text-center" style="background: #8a82cc">苓雅區</a>
-                            </li>
-                            <li><a href="#" class="hotitem text-center" style="background: #FFA782 ">三民區</a></li>
-                            <li><a href="#" class="hotitem text-center" style="background: #F5D105">新興區</a></li>
-                            <li><a href="#" class="hotitem text-center" style="background:  #559AC8">鹽埕區</a></li>
-                        </ul> -->
-                        <div class="d-flex hot">
-                            <button class="btn hotitem " type="button" value="苓雅區" style="background: #8a82cc">苓雅區</button>
-                            <button class="btn hotitem " type="button" value="三民區" style="background: #FFA782 ">三民區</button>
-                            <button class="btn hotitem " type="button" value="新興區" style="background: #F5D105 ">新興區</button>
-                            <button class="btn hotitem " type="button" value="鹽埕區" style="background: #559AC8 ">鹽埕區</button>
-                        </div>
-
-
-                </div>
-            </div>
-    </header>
-    <!-- 水平線 -->
-    <div class="divider mt-4 d-flex justify-content-center">
-        <div class="box" style="width:24px; height:24px;">
-            <i class="fas fa-chevron-circle-down"></i>
-        </div>
-
-    </div>
-
-
-    <!--     JS操控畫面區塊 -->
-    <section class="py-5 ">
-        <div class="container content">
-            <h2 class="text-center mb-4 content-title"style="color: #8a82cc"></h2>
-            
-            <div class="row content-body">
-                <!-- <div class="col-md-6">
-                    <div class="card mb-4" >
-                        <div class="card-img bg-cover d-flex justify-content-between align-items-end"
-                            style="background-image: url(http://khh.travel/FileArtPic.ashx?id=705&w=1280&h=960); height:180px;">
-                            <div class="card-title    text-white font-weight-bold mb-3 ml-4 h3 ">高雄願景館</div>
-                            <div class="card-loca    text-white font-weight-bold mb-2 mr-3 h5 ">三民區</div>
-                        </div>
-
-                        <div class="card-body">
-                            <ul class="card-list">
-                                <li class="card-list-item">
-                                    <img src="images/icons_clock.png" alt="">週二至週日10:00-18:00，每週一公休
-                                </li>
-                                <li>
-                                    <img src="images/icons_pin.png" alt="">
-                                    高雄市三民區建國二路318號
-                                </li>
-                                <li>
-                                    <img src="images/icons_phone.png" alt="">
-                                    886-7-2363357
-                                </li>
-                            </ul>
-                            <span class="card-tag">
-                                <img src="images/icons_tag.png" alt="">
-                                免費參觀
-                            </span>
-                        </div>
-
+   <div class="wrap">
+        <header>
+            <div class="header">
+                <div class="header-bg bg-cover ">
+                    <h1 class="text-white text-center title">高雄旅遊資訊</h1>
+        
+                    <div class="d-flex justify-content-center pb-5">
+                        <select class="form-control " id="dist" style="width: 35.63%;">
+                            <option>--請選擇行政區--</option>
+        
+                        </select>
                     </div>
-                </div> -->
-             
+                </div>
+                <!-- 熱門行政區 -->
+                <div class="row justify-content-center" style="margin-top: -50px;">
+                    <div class="col-10 py-3 hotblock">
+                        <h5 class="">熱門行政區</h4>
+                            <!-- <ul class="d-flex hotList">
+                                    <li class=""><a href="#" class="hotitem text-center" style="background: #8a82cc">苓雅區</a>
+                                    </li>
+                                    <li><a href="#" class="hotitem text-center" style="background: #FFA782 ">三民區</a></li>
+                                    <li><a href="#" class="hotitem text-center" style="background: #F5D105">新興區</a></li>
+                                    <li><a href="#" class="hotitem text-center" style="background:  #559AC8">鹽埕區</a></li>
+                                </ul> -->
+                            <div class="d-flex hot">
+                                <button class="btn hotitem " type="button" value="苓雅區" style="background: #8a82cc">苓雅區</button>
+                                <button class="btn hotitem " type="button" value="三民區" style="background: #FFA782 ">三民區</button>
+                                <button class="btn hotitem " type="button" value="新興區" style="background: #F5D105 ">新興區</button>
+                                <button class="btn hotitem " type="button" value="鹽埕區" style="background: #559AC8 ">鹽埕區</button>
+                            </div>
+        
+        
+                    </div>
+                </div>
+        </header>
+        <!-- 水平線 -->
+        <div class="divider mt-4 d-flex justify-content-center">
+            <div class="box" style="width:24px; height:24px;">
+                <i class="fas fa-chevron-circle-down"></i>
             </div>
-            
-            <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-center" id="pagination">
-                    <!-- <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li> -->
-                </ul>
-            </nav>
-        </div>    
-    </section>
-    <div class="gotop">
-       <button class="btn gotop-btn ">
-           <img src="images/btn_goTop.png" alt="">
-       </button>
-    </div>
-
-
-
-
-    <!--     頁尾 -->
-
-    <footer class="footer-bg py-3">
-        <h5 class="text-center text-white">高雄旅遊網</h5>
-        <h5 class="text-center" style="color: #FFD366;">資料來源：高雄市政府 </h5>
-    </footer>
+        
+        </div>
+        
+        
+        <!--     JS操控畫面區塊 -->
+        <section class="py-5 ">
+            <div class="container content">
+                <h2 class="text-center mb-4 content-title" style="color: #8a82cc"></h2>
+        
+                <div class="row content-body">
+        
+        
+                </div>
+        
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center" id="pagination">
+        
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <div class="gotop">
+            <button class="btn gotop-btn ">
+                <img src="images/btn_goTop.png" alt="">
+            </button>
+        </div>
+        
+        
+        
+        
+        <!--     頁尾 -->
+        
+        <footer class="footer-bg py-3">
+            <h5 class="text-center text-white">高雄旅遊網</h5>
+            <h5 class="text-center" style="color: #FFD366;">資料來源：高雄市政府 </h5>
+        </footer>
+   </div>
 
 
 
