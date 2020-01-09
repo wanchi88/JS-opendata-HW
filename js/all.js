@@ -18,7 +18,7 @@ var displayData = [];
 
 //綁監聽事件
 dist.addEventListener('change', showlist, false);
-hot.addEventListener('click', showlist, false);
+hot.addEventListener('click', showHotlist, false);
 pagination.addEventListener('click', switchPages, false);
 topbtn.addEventListener('click', goTop, false);
 
@@ -59,7 +59,6 @@ function addinfo(e) {
 }
 
 function showlist(e){
-    if (e.target.nodeName !== 'BUTTON') { return }
 
     displayData = []; // 清空上一筆資料，擺放要顯示在網頁上的區域資料
     selectData = []; // 清空上一筆資料，擺放選取的區域資料
@@ -78,6 +77,11 @@ function showlist(e){
     displayData = selectData;
     displayDistrict();
     
+}
+function showHotlist(e){
+    if (e.target.nodeName !== 'BUTTON') { return }
+    showlist(e);
+
 }
 
 function displayDistrict() {
